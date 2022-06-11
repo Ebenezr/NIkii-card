@@ -33,6 +33,9 @@ body{
     border-radius: 1rem;
     overflow: hidden;
 }
+hr{
+    display: none;
+}
 header{
     width: 100%;
     padding: 1rem;
@@ -78,6 +81,12 @@ header img{
     opacity: 0.7;
 
 }
+
+h3.section-title {
+    font-size:0.8rem ;
+}
+/*******************/
+/*button styling*/
 .pry-btn{
     border: none;
     background-color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
@@ -87,6 +96,13 @@ header img{
     font-weight: 700;
     font-size: 1.2rem;
 }
+/*hover state*/
+.pry-btn:hover ,.pry-btn:focus{
+   
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 /***************/
 .color-wrapper{
     position: relative;
@@ -94,6 +110,7 @@ header img{
     gap: 1rem;
     padding: 1rem;
 }
+/*************************/
 input[type="radio"] {
     /* Add if not using autoprefixer */
     -webkit-appearance: none;
@@ -153,13 +170,8 @@ input[type="radio"]:focus {
     color: var(--form-control-color);
 }
 
-/***************/
+/*****************************/
 
 
 
-.pry-btn:hover ,.pry-btn:focus{
-   
-    transform: scale(1.1);
-    cursor: pointer;
-}
 
