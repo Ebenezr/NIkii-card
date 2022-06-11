@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --clr-pry:#9EC6E7;
-    --clr-acsent:#AADD02;
-    --clr-white:#fff;
-    --clr-bg:#F6F6F6;
+    --aero: #88b4ddff;
+    --apple-green: #7cbf06ff;
+    --blue-sapphire: #1f556dff;
+    --honolulu-blue: #1c71a1ff;
+    --eerie-black: #101415ff;
     font-size: 1rem;
 }
 *{
@@ -20,15 +21,85 @@ body{
 }
 .pry-btn{
     border: none;
-    background-color: var(--clr-acsent);
+    background-color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     padding: 1rem 1.5rem;
     border-radius: 0.4rem;
     color: var(--clr-white);
     font-weight: 700;
     font-size: 1.2rem;
 }
+/***************/
+.color-wrapper{
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    /* ...existing styles */  
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+} 
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+}
+  
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="radio"]::before {
+    /* ...existing styles */
+  
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+}
+input[type="radio"]:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+}
+
+.form-control:focus-within {
+    color: var(--form-control-color);
+}
+
+/***************/
+
+
+
 .pry-btn:hover ,.pry-btn:focus{
-    background-color: var(--clr-acsent);
+   
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -40,10 +111,11 @@ body{
     flex-direction: column;
     gap:1rem;
 }
-.header{
+.container.header{
     width: 100%;
     height: 35%;
-    background-color: var(--clr-pry);
+    background: linear-gradient(90deg, rgba(124,191,6,1) 0%, rgba(136,180,221,1) 35%, rgba(28,113,161,1) 100%);
+
 
 }
 .contentWrapper{
