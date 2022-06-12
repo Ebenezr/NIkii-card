@@ -161,11 +161,16 @@ input[type="radio"]:focus {
 }
 
 .form-control:focus-within {
-    color: var(--apple-green);
+    color: var(--apple-green); 
 }
 
 /*****************************/
 
-
-
+input[type="number"]{
+    border: none;
+    width: max-content;
+    margin: 1rem 0;
+}
+/********************************/
+/*MEDIA QUERY BIG SCREEN*/
 
