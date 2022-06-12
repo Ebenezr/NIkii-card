@@ -181,9 +181,9 @@ input[type="number"]{
     .container{
         display: grid;
         grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.5fr 2fr;
         height: 80vh;
-        width: 90vw;
+        width: 80vw;
         overflow-x: auto;
         background-color: rgb(209, 208, 208);
 
@@ -196,9 +196,13 @@ input[type="number"]{
         align-items: center;
         position: relative;
     }
-    header img{
-       /* position: absolute;*/
-        width: 100%;
+    img.shoe{
+       position: absolute;
+       min-width: 20rem;
+       margin-left: -10rem;
         
+    }
+    .content-wrapper{
+        padding: 1rem;
     }
 }
