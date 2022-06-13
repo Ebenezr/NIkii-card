@@ -45,6 +45,8 @@ header{
     place-items: center;
 
 }
+/*********************/
+/*Dots*/
 header .dots{
     display: flex;
     flex-direction: row;
@@ -68,6 +70,14 @@ header .dots{
     background-color: grey;
     
 
+}
+/*****************************/
+.rate a{
+    text-decoration: none;
+    color: grey;
+}
+.rate .active{
+    color: rgb(236, 0, 0);
 }
 header img{
     max-width: 90%;
