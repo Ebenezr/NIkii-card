@@ -211,6 +211,31 @@ select{
     outline: none;
 }
 /********************************/
+.color-wrapper a{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color: #1c71a1ff;
+    border-radius: 50%;
+    position: relative;
+
+}
+.color-wrapper a::after{
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: grey;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+}
+.color-wrapper a:hover ,.color-wrapper a:focus{
+    outline: none;
+}
+
+
+/********************************/
 /*MEDIA QUERY BIG SCREEN*/
 @media (min-width:500px){
     body{
