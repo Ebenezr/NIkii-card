@@ -45,6 +45,30 @@ header{
     place-items: center;
 
 }
+header .dots{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.dots a{
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: grey;
+    border-radius: 50%;
+    border: none;
+}
+.dots a.active{
+    background-color: white;
+}
+.dots a:focus, .dots a:hover{
+    background-color: white;
+}
+.dots:hover + .active{
+    background-color: grey;
+    
+
+}
 header img{
     max-width: 90%;
     max-height: 90%;
