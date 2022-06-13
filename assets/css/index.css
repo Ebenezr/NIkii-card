@@ -188,5 +188,9 @@ input[type="number"]{
         background-color: rgb(209, 208, 208);
 
     }
+    header img{
+        position: absolute;
+        left:-30%
+    }
  
 }
