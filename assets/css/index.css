@@ -79,6 +79,7 @@ header .dots{
 .rate .active{
     color: rgb(236, 0, 0);
 }
+/*****************************/
 header img{
     max-width: 90%;
     max-height: 90%;
@@ -200,10 +201,14 @@ input[type="radio"]:focus {
 
 /*****************************/
 
-input[type="number"]{
-    border: none;
+select{
+    border: rgba(179, 179, 179, 0.479) 0.1rem solid;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
     width: max-content;
     margin: 1rem 0;
+    background-color: transparent;
+    outline: none;
 }
 /********************************/
 /*MEDIA QUERY BIG SCREEN*/
