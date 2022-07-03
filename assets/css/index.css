@@ -276,8 +276,37 @@ select{
     header>.dots{
         justify-self: flex-end;
     }
-    .contentWrapper{
+    .content-wrapper{
         height: 100%;
+        padding: 2.5rem;
+    }
+    .titleWrapper h1{
+        font-size: 2.2rem;
+
+    }
+    .titleWrapper h4{
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+
+    }
+    .titleWrapper h3{
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 0;
+
+    }
+    .titleWrapper strong{
+        font-size: 1.4rem;
+        font-weight: 800;
+        letter-spacing: 0;
+
+    }
+    .rate{
+        padding: 0.5rem 0;
+        
+    }
+    .star{
+        font-size: 1.5rem;
     }
  
 }
